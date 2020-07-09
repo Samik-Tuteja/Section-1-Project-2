@@ -1,0 +1,131 @@
+:root {
+    --base-color- :rgba(0, 0, 0, 0.25);
+    --other-color: #4756DF;
+}
+body{
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-top: 2.5rem;
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+.top-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.top-nav .main-h1{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans';
+    font-size: 1.7rem;
+}
+.top-nav .main-a{
+    text-decoration: none;
+    padding: 0.4rem 2.5rem;
+    background-color: var(--other-color);
+    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 3px 3px 25px var(--base-color-);
+    font-family: 'Josefin Sans';
+}
+.top-nav .main-a:hover{
+    background-color: #05106d;
+    transition-duration: .5s;
+}
+.second{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6.5rem;
+}
+.second-box{
+    max-width: 35%;
+}
+.second .second-box .second-box-h1{
+    font-family: 'Josefin Sans';
+    font-size: 2.2rem;
+}
+.second .second-box .second-box-p{
+    font-family: 'IBM Plex Sans';
+    color: #838383;
+}
+.second .second-box .second-box-a-1{
+    background-color: rgba(71, 86, 223, 0.95);
+    box-shadow: 3px 3px 25px var(--base-color-);
+    text-decoration: none;
+    padding: 0.5rem 2.2rem;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: 'Josefin Sans';
+}
+.second .second-box .second-box-a-1:hover{
+    background-color: #05106d;
+    transition-duration: .5s;
+}
+.second .second-box .second-box-a-2{
+    border: 2px solid #959090;
+    padding: 0.5rem 2.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 0.1rem;   
+    color: #838383;
+    font-family: 'Josefin Sans';
+}
+.second .second-box-img .main-img{
+    height: 20rem;
+    width: auto;
+}
+.third-div-h1{
+    text-align: center;
+    font-family: 'Josefin Sans';
+    text-align: center;
+    font-size: 1.6rem;
+}
+.third-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.third-div .third-div-box{
+    width: 17rem;
+    height: auto;
+    box-shadow: 0px 4px 12px var(--base-color-);
+    border-radius: 10px;
+    margin-left: 1.4rem;
+    background-color: #F9F9F9;;
+}
+.third-div .third-div-box .third-div-img{
+    width: 100%;
+    height: 10rem;
+}
+.third-div .third-div-box .third-box-content{
+    margin-left: .7rem;
+}
+
+.third-div .third-div-box .third-box-content .third-h1{
+    font-family: 'Josefin Sans';
+    font-size: 1.3rem;    
+}
+.third-div .third-div-box .third-box-content .third-p{
+    font-family: 'IBM Plex Sans';
+}
+#more-arrow{
+    -webkit-text-stroke: 1.5px white;
+    margin-left: 3px;
+}
+.third-div .third-div-box .third-box-content .hover{
+    font-family: 'Inter';
+    cursor: pointer;
+}
+#class:hover, .hover:hover #class,#more-arrow:hover , .hover:hover #more-arrow{
+    animation-name: arrow;
+    animation-duration: .8s;
+}
+@keyframes arrow{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(10px);
+    }
+}
